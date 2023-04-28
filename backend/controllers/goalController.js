@@ -13,7 +13,7 @@ const setGoal = asyncHandler(async (req, res) => {
   }
 
   const goal = await Goal.create({
-    goal: req.body.goal,
+    goal: req.body.goal, 
   });
 
   res.status(200).json(goal);
